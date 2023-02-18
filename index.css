@@ -1,22 +1,26 @@
 .container {
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40px 40px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 200px 100px;
 }
 
 .header {
-    
+  /* grid-column: 1/11; */
+  grid-column: 2/-1;
 }
 
 .menu {
-
+  grid-column: 1/2;
+  grid-row: 1/4;
 }
 
 .content {
-
+  /* grid-column: 1/11; */
+  grid-column: 2/-1;
 }
 
 .footer {
-
+  grid-column: 2/-1;
+  /* grid-column: 1/11; */
 }
